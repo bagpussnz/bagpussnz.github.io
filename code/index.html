@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Tesla Auth Code</h2>
+<p id="code"></p>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const code = params.get('code');
+  document.getElementById('code').innerText = code ? 'Code: ' + code : 'No code found in URL.';
+</script>
+</body>
+</html>
